@@ -1,0 +1,62 @@
+version: '2'
+
+services:
+  # jwilder/nginx proxy
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs:/etc/nginx/certs 
+      - ./vhost:/etc/nginx/vhost.d 
+      - ./html:/usr/share/nginx/html 
+  
+  # reverse proxy let's encrypt companion
+  nginx-proxy-acme:
+    image: nginxproxy/acme-companion
+    container_name: nginx-proxy-acme
+    restart: always
+    volumes_from:
+      - nginx-proxy
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./acme:/etc/acme.sh
+
+  # React frontend
+  frontend:
+    image: frontend
+    container_name: frontend
+    restart: always
+    env_file: .env
+    expose: 
+      - ${FRONT_PORT}
+    environment:
+      - LETSENCRYPT_HOST=${PROXY_DOMAIN}
+      - VIRTUAL_HOST=${PROXY_DOMAIN}
+      - VIRTUAL_PATH=/
+  
+  # react backend      
+  backend:
+    image: backend
+    container_name: backend
+    restart: always
+    env_file: .env
+    expose: 
+      - ${BACK_PORT}
+    environment:
+      - LETSENCRYPT_HOST=${PROXY_DOMAIN}
+      - VIRTUAL_HOST=${PROXY_DOMAIN}
+      - VIRTUAL_PATH=${NEXT_PUBLIC_APPEND}/
+      - VIRTUAL_PORT=${BACK_PORT}
+      - VIRTUAL_DEST=/
+    volumes:
+      - images_db:/app/uploads
+      - ./certs:/app/certs
+
+volumes:
+  images_db:
+    
