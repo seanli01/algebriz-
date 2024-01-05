@@ -1,0 +1,21 @@
+.current {
+  font-weight: bold;
+}
+
+.header__link {
+  color: white;
+  font-size: 1.2em;
+  user-select: none;
+  text-decoration: none;
+  margin: 0px 5px;
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+.clickable:hover {
+  background-color: var(--color-main-dark);
+}
+
+.clickable:active {
+  filter: var(--filter-dark);
+}

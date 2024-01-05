@@ -1,0 +1,44 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 8px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --color-white: rgb(256, 256, 256);
+  --color-white-dark: rgb(221, 221, 221);
+  --color-white-darkest: rgb(204, 204, 204);
+
+  --color-gray: rgb(180, 180, 180);
+  --color-gray-dark: rgb(107, 107, 107);
+
+  --color-black: rgb(0, 0, 0);
+
+  --color-err: rgb(189, 0, 0);
+  --color-err-dark: rgb(156, 0, 0);
+  --color-err-darkest: rgb(133, 0, 0);
+  --color-err-light: rgb(247, 172, 172);
+  --color-err-lightest: rgb(250, 211, 211);
+
+  --color-success: rgb(0, 100, 0);
+
+  --color-main: rgb(52, 130, 255);
+  --color-main-dark: rgb(24, 92, 202);
+  --color-main-back: rgb(227, 238, 255);
+  
+  --color-purple: rgb(176, 117, 243);
+  --color-purple-dark: rgb(144, 71, 226);
+  --color-purple-darkest: rgb(131, 35, 241);
+  --color-purple-light: rgb(205, 159, 252);
+  --color-purple-lightest: rgb(233, 216, 252);
+  --color-purple-back: rgb(242, 232, 253);
+
+  --color-green: rgb(103, 219, 99);
+  --color-green-dark: rgb(59, 189, 55);
+  --color-green-darkest: rgb(22, 128, 18);
+  --color-green-light: rgb(186, 255, 184);
+  --color-green-lightest: rgb(225, 255, 224);
+  --color-green-back: rgb(236, 255, 236);
+
+  --filter-dark: brightness(80%);
+}

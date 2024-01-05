@@ -1,0 +1,22 @@
+.text {
+  align-self: stretch;
+  min-height: 30px;
+  font-size: 0.8em;
+  margin: 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.err {
+  color: var(--color-err);
+}
+
+.warn {
+  color: rgb(129, 121, 3);
+}
+
+.succ {
+  color: var(--color-success);
+}

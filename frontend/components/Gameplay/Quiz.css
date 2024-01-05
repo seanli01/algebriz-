@@ -1,0 +1,27 @@
+.score-container {
+  position: fixed;
+  top: 10px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 1em;
+  z-index: 100;
+}
+
+.start-button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: #f8f9fa;
+  color: #333;
+  border-radius: var(--border-radius);
+  text-align: center;
+  line-height: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

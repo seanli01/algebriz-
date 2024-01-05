@@ -1,0 +1,29 @@
+.cont {
+  display: flex;
+  cursor: pointer;
+  border: solid var(--color-err);
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+}
+
+.icon {
+  display: flex;
+  padding: 6px;
+  align-items: center;
+}
+
+.text {
+  color: var(--color-err);
+  user-select: none;
+  padding: 3px;
+}
+
+.cont:hover {
+  border-color: var(--color-err-dark);
+  background-color: var(--color-err-lightest);
+}
+
+.cont:active {
+  border-color: var(--color-err-darkest);
+  background-color: var(--color-err-light);
+}

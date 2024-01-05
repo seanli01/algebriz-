@@ -1,0 +1,61 @@
+.matrix-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .matrix-button-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .matrix-row {
+    display: flex;
+  }
+  
+  .matrix-button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: #ddd;
+    cursor: pointer;
+  }
+  
+  .matrix-button.selected {
+    background-color: #aaa;
+  }
+  
+
+  .flash-screen {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    color: white;
+    font-size: 2em; 
+  }
+  
+  .flash-screen.correct {
+    background-color: green;
+    animation: flash 5s forwards;
+  }
+  
+  .flash-screen.incorrect {
+    background-color: red;
+    animation: flash 5s forwards; 
+  }
+  
+  /* Keyframes for the flash animation */
+  @keyframes flash {
+    from { opacity: 0.8; }
+    to { opacity: 0; }
+  }
+  

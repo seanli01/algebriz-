@@ -1,0 +1,25 @@
+﻿.session-button {
+    display: block;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+    color: #333;
+    border-radius: var(--border-radius);
+}
+
+.session-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}

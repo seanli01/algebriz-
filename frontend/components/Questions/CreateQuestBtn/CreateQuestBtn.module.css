@@ -1,0 +1,26 @@
+.cont {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  height: 40px;
+  font-size: 1em;
+  font-family: inherit;
+  border: solid var(--color-purple);
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: var(--color-purple-dark);
+  background-color: var(--color-purple-lightest);
+}
+
+.button:active {
+  border-color: var(--color-purple-darkest);
+  background-color: var(--color-purple-light);
+}

@@ -1,0 +1,135 @@
+.quest_cont {
+  margin-bottom: 10px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+}
+
+.quest_img_cont {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image {
+  object-fit: contain;
+  min-width: 300px;
+  max-height: 300px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-purple-back);
+}
+
+.header__info {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.header__info__showhide {
+  border-radius: var(--border-radius);
+  border: solid var(--color-purple);
+  background-color: var(--color-white);
+  width: 50px;
+  padding: 4px;
+  user-select: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header__info__label {
+  width: 30px;
+  margin-right: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.header__info__question {
+  flex: auto;
+  margin: 0px 10px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.header__opts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px 10px;
+  align-items: flex-start;
+}
+
+.header__opts__left {
+  display: flex;
+  flex: auto;
+  align-items: flex-start;
+}
+
+.header__opts__stack {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.header__opts__text {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.header__opts__input {
+  width: auto;
+  font-family: inherit;
+  font-size: 0.8em;
+}
+
+.header__opts__file_cont {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px 10px 30px;
+}
+
+.notype_text {
+  padding: 10px;
+  font-size: 0.8em;
+  font-style: italic;
+  color: var(--color-gray-dark);
+  background-color: var(--color-purple-back);
+}
+
+.add_quest_cont {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.add_quest_text {
+  margin-left: 10px;
+  user-select: none;
+}
+
+.border {
+  border-color: var(--color-purple);
+  border-style: solid;
+  border-radius: var(--border-radius);
+}
+
+.err_border {
+  border-color: var(--color-err);
+}
+
+.header__info__showhide:hover,
+.add_quest_cont:hover {
+  border-color: var(--color-purple-dark);
+  background-color: var(--color-purple-lightest);
+}
+
+.header__info__showhide:active,
+.add_quest_cont:active {
+  border-color: var(--color-purple-darkest);
+  background-color: var(--color-purple-light);
+}

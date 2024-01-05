@@ -1,0 +1,18 @@
+.btn {
+  background-color: var(--color-white);
+  color: var(--color-main);
+  border-radius: var(--border-radius);
+  text-align: center;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: var(--color-white-dark);
+}
+
+.btn:active {
+  filter: var(--filter-dark)
+}

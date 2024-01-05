@@ -1,0 +1,62 @@
+/* MultipleChoice.css */
+.mcq-container {
+  text-align: center;
+  position: relative;
+}
+
+.mcq-button-group {
+  margin: 10px 0;
+}
+
+.mcq-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mcq-button.selected {
+  background-color: #c8e6c9;
+}
+
+.mcq-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.flash-text {
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000; 
+}
+
+.flash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: block;
+}
+
+.flash-screen.correct {
+  background-color: green;
+  animation: flash 5s forwards;
+}
+
+.flash-screen.incorrect {
+  background-color: red;
+  animation: flash 5s forwards;
+}
+
+@keyframes flash {
+  from { opacity: 0.8; }
+  to { opacity: 0; }
+}

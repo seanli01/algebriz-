@@ -1,0 +1,23 @@
+﻿.btn {
+    height: 30px;
+    width: 120px;
+    font-size: 1em;
+    font-weight: bold;
+    justify-content: center;
+    margin: 10px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.page-btns {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.page-text {
+    text-align: center;
+}

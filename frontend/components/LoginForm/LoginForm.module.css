@@ -1,0 +1,51 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  position: absolute;
+  top: 72px;
+  right: 9px;
+  width: 20%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 10px;
+  background-color: var(--color-purple-back);
+  border: solid var(--color-purple);
+  border-radius: 0px 0px var(--border-radius) var(--border-radius);
+  z-index: 1;
+  color: black;
+}
+
+.form__title {
+  color: black;
+}
+
+.form__textbox {
+  align-self: stretch;
+  font-family: inherit;
+  font-size: 1em;
+  border: solid var(--color-purple);
+}
+
+.err {
+  border: solid var(--color-err);
+}
+
+.form__btn {
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form__signin {
+  width: 90%;
+  margin-top: 35px;
+}
+
+.form__signup {
+  width: 90%;
+}
